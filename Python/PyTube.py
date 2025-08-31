@@ -1,6 +1,6 @@
 from pytubefix import YouTube
 from pytubefix.cli import on_progress  # если нужен прогресс-бар
-
+'
 urls = [
     "ссылку видоса",
 ]
