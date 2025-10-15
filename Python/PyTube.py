@@ -1,9 +1,8 @@
 from pytubefix import YouTube
 from pytubefix.cli import on_progress  # если нужен прогресс-бар
-'
-urls = [chervyak
-    "ссылку видоса",
-]
+
+urls = [
+    "ссылку видоса",]
 
 for url in urls:
     yt = YouTube(url, on_progress_callback=on_progress)
