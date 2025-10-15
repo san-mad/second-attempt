@@ -9,7 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Клонировать репозиторий
         uses: actions/checkout@v3
@@ -27,3 +26,7 @@ jobs:
       - name: Запустить тесты
         run: |
           if [ -d tests ]; then pytest; else echo "No tests found"; fi
+
+      - name: Проверить синтаксис Python
+        run: |
+         python -m compileall -q .
